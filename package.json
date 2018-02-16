@@ -1,0 +1,44 @@
+{
+  "name": "subtitle-download",
+  "version": "1.0.0",
+  "description": "Download a subtitle from Subscene, extract the zip file, convert to UTF-8, rename the subtitle file to match the movie in the current directory",
+  "main": "bin/index.js",
+  "bin": {
+    "subtitleDownload": "bin/index.js",
+    "subd": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faressoft/subtitle-download.git"
+  },
+  "keywords": [
+    "subscene",
+    "subtitle",
+    "download",
+    "encoding",
+    "unzip",
+    "extract",
+    "rename",
+    "get",
+    "fetch",
+    "movie"
+  ],
+  "author": "Mohammad Fares <faressoft.com@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "cheerio": "^1.0.0-rc.2",
+    "download": "^6.2.5",
+    "fuzzy": "^0.1.3",
+    "glob": "^7.1.2",
+    "iconv-lite": "^0.4.18",
+    "inquirer": "^5.1.0",
+    "inquirer-autocomplete-prompt": "^0.12.1",
+    "jschardet": "^1.5.1",
+    "lodash": "^4.17.5",
+    "parse-torrent-name": "^0.5.4",
+    "request": "^2.81.0",
+    "rimraf": "^2.6.1",
+    "tmp": "0.0.33"
+  }
+}
