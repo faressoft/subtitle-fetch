@@ -1,5 +1,7 @@
 var iconvLite = require('iconv-lite')
-  , jschardet = require('jschardet');
+  , chardet   = require('chardet');
+
+var fs = require('fs');
 
 /**
  * Convert encoding to UTF-8
@@ -10,16 +12,11 @@ var iconvLite = require('iconv-lite')
 function converToUTF8(buffer) {
 
   // Detect the encoding
-  var detectedEncoding = jschardet.detect(buffer.toString()).encoding;
+  var detectedEncoding = chardet.detect(buffer);
 
   // Already UTF8
   if (!detectedEncoding || detectedEncoding.toLowerCase() == 'utf-8' || detectedEncoding.toLowerCase() == 'ascii') {
     return buffer.toString();
-  }
-
-  // Fix
-  if (detectedEncoding == 'windows-1252') {
-    detectedEncoding = 'windows-1256';
   }
 
   return iconvLite.decode(buffer, detectedEncoding);
