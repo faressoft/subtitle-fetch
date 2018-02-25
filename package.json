@@ -1,6 +1,6 @@
 {
-  "name": "subtitle-download",
-  "version": "1.0.0",
+  "name": "subtitle-fetch",
+  "version": "1.1.0",
   "description": "Download a subtitle from Subscene, extract the zip file, convert to UTF-8, rename the subtitle file to match the movie in the current directory",
   "main": "bin/index.js",
   "bin": {
@@ -9,12 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/faressoft/subtitle-download.git"
+    "url": "https://github.com/faressoft/subtitle-fetch.git"
   },
   "keywords": [
     "subscene",
     "subtitle",
     "download",
+    "fetch",
     "encoding",
     "unzip",
     "extract",
