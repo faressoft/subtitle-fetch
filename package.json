@@ -4,8 +4,8 @@
   "description": "Download a subtitle from Subscene, extract the zip file, convert to UTF-8, rename the subtitle file to match the movie in the current directory",
   "main": "bin/index.js",
   "bin": {
-    "subtitleDownload": "bin/index.js",
-    "subd": "bin/index.js"
+    "subtitleFetch": "bin/index.js",
+    "subf": "bin/index.js"
   },
   "repository": {
     "type": "git",

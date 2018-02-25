@@ -1,7 +1,7 @@
-# SubtitleDownload
+# SubtitleFetch
 
-[![npm](https://img.shields.io/npm/v/subtitle-download.svg)](https://www.npmjs.com/package/subtitle-download)
-[![npm](https://img.shields.io/npm/l/subtitle-download.svg)](https://github.com/faressoft/subtitle-download/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/subtitle-fetch.svg)](https://www.npmjs.com/package/subtitle-fetch)
+[![npm](https://img.shields.io/npm/l/subtitle-fetch.svg)](https://github.com/faressoft/subtitle-fetch/blob/master/LICENSE)
 
 ![Demo](/demo.gif?raw=true)
 
@@ -23,7 +23,7 @@ It is a tool to help you to download subtitles from [Subscene](https://subscene.
 # Installation
 
 ```
-npm install -g subtitle-download
+npm install -g subtitle-fetch
 ```
 
 # Usage
@@ -31,13 +31,13 @@ npm install -g subtitle-download
 Go to the directory that has the movie file then run the tool:
 
 ```
-subtitleDownload
+subtitleFetch
 ```
 
 or the another alias
 
 ```
-subd
+subf
 ```
 
 # License
