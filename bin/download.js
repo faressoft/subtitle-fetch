@@ -9,7 +9,7 @@ var fs       = require('fs')
  * Download, extract, and get the content of the subtitle file
  * 
  * @param  {String}  downloadLink
- * @return {Promise} resolve with {content: buffer, type: (srt, ass)}
+ * @return {Promise} resolve with {content: buffer, type: (srt, ass, sub)}
  */
 function fetch(downloadLink) {
 
@@ -21,7 +21,7 @@ function fetch(downloadLink) {
     download(downloadLink, tmpDir, {extract: true}).then(function() {
 
       // Get the subtitle file
-      glob(path.join(tmpDir, '*.+(srt|ass)'), {}, function(error, files) {
+      glob(path.join(tmpDir, '*.+(srt|ass|sub)'), {}, function(error, files) {
 
         // Something went wrong
         if (error) {
